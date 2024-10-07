@@ -21,7 +21,6 @@
     
 }
 
-
 .productName{
     font-size: 20px;
     font-weight: bold;
@@ -40,4 +39,33 @@
     display: flex;
     align-items: center;
     gap: 8px;
+}
+
+
+
+
+.intropart{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+
+h1{
+    width: 100%;
+    text-align: center;
+}
+
+.cartItems{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.clearCart{
+    float: right;
+    padding: 10px;
+    margin-right: 20px;
+
 }

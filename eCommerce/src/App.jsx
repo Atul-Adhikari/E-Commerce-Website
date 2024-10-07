@@ -19,11 +19,14 @@ function App() {
   useEffect(() => {
     fetchProductData();
   }, []);
+
+  const [carts, setCarts]=useState([]);
+
   return (
     <>
       <Router>
         <Navbar />
-        <MyContext.Provider value={products}>
+        <MyContext.Provider value={{products, setProducts, carts, setCarts}}>
           <Routes>
             <Route element={<Shop />} path="/" />
             <Route element={<Cart />} path="/cart" />
