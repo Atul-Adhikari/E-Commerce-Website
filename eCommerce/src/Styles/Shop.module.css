@@ -1,3 +1,11 @@
-.intropart{
-    text-align: center;
+.shop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.intropart {
+  text-align: center;
+  width: 100%;
 }

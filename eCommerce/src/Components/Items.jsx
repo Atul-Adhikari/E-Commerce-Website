@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { MyContext } from "../App";
 import styles from "../Styles/Items.module.css";
+import {ShoppingCart} from 'phosphor-react'
 const Items = ({product}) => {
   const products = useContext(MyContext);
   return (
@@ -8,9 +9,9 @@ const Items = ({product}) => {
       <div className={styles.singleItem}>
         <div className={styles.eachItem}>
           <img className={styles.productImage} src={product.image} />
-          <h2>{product.title}</h2>
+          <p className={styles.productName}>{product.title}</p>
+          <p className={styles.productPrice}>${product.price}<button>Add to Cart <ShoppingCart size={20}/></button></p>
         </div>
-        {/* <h2>{products.title}</h2> */}
       </div>
     </div>
   );
