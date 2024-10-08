@@ -5,7 +5,14 @@ import { ShoppingCart } from "phosphor-react";
 const Items = ({ product }) => {
   const { products, setProducts, carts, setCarts } = useContext(MyContext);
   const saveToCart=()=>{
-    setCarts([...carts,product])
+    if(carts.includes(product)){
+      alert(product.title+"already in cart.");
+      return;
+    }
+    const updatedCarts=[...carts,product]
+    setCarts(updatedCarts)
+    localStorage.setItem("carItem",JSON.stringify(updatedCarts))
+ 
   }
   return (
     <div>

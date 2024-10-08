@@ -5,14 +5,18 @@ import { MyContext } from "../App";
 const Cart = () => {
   const { carts, setCarts } = useContext(MyContext);
   const clearCart=()=>{
+    localStorage.removeItem("carItem")
     setCarts([])
   }
+
+  const cartItems=JSON.parse(localStorage.getItem("carItem")) || [];
+  console.log(cartItems)
   return (
     <div>
       <h1>Your items here</h1>
       <button className={styles.clearCart} onClick={clearCart}>Clear Cart</button>
       <div className={styles.intropart}>
-        {carts.map((product) => {
+        {cartItems.map((product) => {
           return (
             <div className={styles.cartItems}>
               <div className={styles.singleItem}>
