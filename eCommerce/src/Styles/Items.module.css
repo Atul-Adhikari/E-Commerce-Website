@@ -2,7 +2,7 @@
     max-width: 130px;
     min-width: 120px;
     max-height: 120px;
-    transition: transform 0.3s ease;
+    transition: transform 0.4s ease-in-out;
 
 }
 
@@ -18,7 +18,8 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 255, 0.152);
+    background-color: black;
+    color: white;
     max-width: 270px;
     min-width: 270px;
     padding: 8px;
@@ -26,7 +27,11 @@
     border-radius: 8px;
     min-height: 320px;
     max-height: 320px;
-    
+    transition: transform 0.6s ease;
+}
+
+.eachItem:hover{
+    transform: scale(1.09);
 }
 
 .productName{
@@ -39,6 +44,7 @@
     align-items: center;
     font-size: 20px;
     font-weight: bold;
+    color: red;
 }
 
 .productPrice button{
@@ -51,8 +57,8 @@
 
 .addToCart{
     border-radius: 8px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     border: none;
     cursor: pointer;
     display: flex;
@@ -65,7 +71,7 @@
 
 .addToCart:hover{
     transform: scale(1.1);
-    background-color: rgba(0, 0, 0, 0.815);
+    background-color: rgba(255, 255, 255, 0.658);
 }
 .intropart{
     display: flex;
@@ -106,10 +112,16 @@ h1{
     padding: 10px;
     margin-left: 90%;
     font-size: 20px;
+    transition: transform 0.3s ease;
     
 }
 
 .removeFromCart:hover{
     cursor: pointer;
+    transform: scale(1.2);
     
+}
+
+.noItems{
+    margin-top: 200px;
 }

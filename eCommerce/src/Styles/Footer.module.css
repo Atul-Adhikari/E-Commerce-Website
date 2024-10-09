@@ -1,0 +1,73 @@
+.footer {
+  margin-top: 150px;
+  background-color: rgb(40, 39, 39);
+  color: white;
+  text-align: center;
+}
+
+.textpart {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.iconpart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+    font-size: 25px;
+   
+}
+
+.facebook, .discord, .youtube, .twitter, .linkedin{
+    transition:transform 0.4s ease;
+}
+
+.iconpart .facebook:hover {
+    color: #3b5998;
+    transform: scale(1.4);
+    transition: transform 0.4s ease, color 0.4s ease;
+}
+
+.iconpart .twitter:hover {
+    color: #1da1f2;
+    transform: scale(1.4);
+    transition: transform 0.4s ease, color 0.4s ease;
+}
+
+.iconpart .linkedin:hover {
+    color: #0077b5;
+    transform: scale(1.4);
+    transition: transform 0.4s ease, color 0.4s ease;
+}
+
+.iconpart .discord:hover {
+    color: #7289da;
+    transform: scale(1.4);
+    transition: transform 0.4s ease, color 0.4s ease;
+}
+
+.iconpart .youtube:hover {
+    color: #ff0000;
+    transform: scale(1.4);
+    transition: transform 0.4s ease, color 0.4s ease;
+}
+
+
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.192);
+  /* padding: 4px; */
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.copyright span{
+    color: skyblue;
+    cursor: pointer;
+}

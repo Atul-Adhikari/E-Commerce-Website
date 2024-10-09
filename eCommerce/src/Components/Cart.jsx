@@ -25,6 +25,13 @@ const Cart = () => {
   const openImage=(product)=>{
     window.open(product.image, "_blank")
   }
+
+  const itemsInCart=cartItems.length;
+  if(itemsInCart<1){
+    return(
+      <h1 className={styles.noItems}>No items in cart.</h1>
+    )
+  }
   return (
     <div>
       <h1>Your items here</h1>

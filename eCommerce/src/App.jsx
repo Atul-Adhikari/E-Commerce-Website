@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar";
 import Shop from "./Components/Shop";
 import Cart from "./Components/Cart";
 import axios from "axios";
+import Footer from "./Components/Footer";
 
 export const MyContext = createContext();
 function App() {
@@ -31,6 +32,7 @@ function App() {
             <Route element={<Cart />} path="/cart" />
           </Routes>
         </MyContext.Provider>
+        <Footer/>
       </Router>
     </>
   );
