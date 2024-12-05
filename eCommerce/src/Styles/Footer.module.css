@@ -1,7 +1,7 @@
 .footer {
   margin-top: 150px;
-  background-color: rgb(40, 39, 39);
-  color: white;
+  background-color: #eff3f4;
+  color: black;
   text-align: center;
 }
 
@@ -61,7 +61,7 @@
 .copyright {
   display: flex;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.192);
+  background-color: #eff3f4;
   /* padding: 4px; */
   margin-top: 20px;
   font-size: 18px;

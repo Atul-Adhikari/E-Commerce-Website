@@ -18,8 +18,8 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    color: white;
+    background-color: #f2f0ea;
+    color: black;
     max-width: 270px;
     min-width: 270px;
     padding: 8px;
@@ -57,8 +57,8 @@
 
 .addToCart{
     border-radius: 8px;
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     border: none;
     cursor: pointer;
     display: flex;
@@ -71,7 +71,7 @@
 
 .addToCart:hover{
     transform: scale(1.1);
-    background-color: rgba(255, 255, 255, 0.658);
+    background-color: rgba(0, 0, 0, 0.334);
 }
 .intropart{
     display: flex;
@@ -124,4 +124,21 @@ h1{
 
 .noItems{
     margin-top: 200px;
+}
+
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+
+.favorites{
+    background: #d7d2bf;
+    padding: 5px;
+    border-radius: 5px;
 }
