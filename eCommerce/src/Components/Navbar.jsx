@@ -5,7 +5,6 @@ import { ShoppingCart } from "phosphor-react";
 import { HouseLine } from "phosphor-react";
 const Navbar = () => {
   return (
-    <div className="">
       <div className={styles.navbar}>
         <Link className={styles.links} to="/">
           <HouseLine /> Home
@@ -13,7 +12,6 @@ const Navbar = () => {
         <Link className={styles.links} to="/cart">
           <ShoppingCart /> My Cart
         </Link>
-      </div>
     </div>
   );
 };

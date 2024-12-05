@@ -27,7 +27,7 @@ const Footer = () => {
       </div>
       <div className={styles.copyright}>
         <p>
-          Copyright &copy;2024 | <span>Reborn Wear</span>
+          Copyright &copy; 2024 | <span>Reborn Wear</span>
         </p>
         <p><span><FaMapMarkerAlt/></span> Basundhara, Kathmandu</p>
       </div>

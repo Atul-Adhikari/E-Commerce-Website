@@ -2,7 +2,9 @@
     display: flex;
     gap: 50px;
     align-items: center;
-    padding: 30px;
+    margin: 40px;
+    /* padding: 30px; */
+    border-bottom: 1px solid rgba(0, 0, 255, 0.257);
 }
 
 .links{
